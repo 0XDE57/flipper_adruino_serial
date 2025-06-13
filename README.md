@@ -1,6 +1,6 @@
 # Flipper Adruino Serial (UART) Forward
 
-Read read Flipper Zero logs via UART using an Arduino. 
+Read Flipper Zero logs via UART using an Arduino. 
 
 The Flipper docs provide a way to do it with the Wi-Fi Developer Board:
 https://developer.flipper.net/flipperzero/doxygen/dev_board_reading_logs.html
