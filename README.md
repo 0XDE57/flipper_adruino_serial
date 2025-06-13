@@ -82,3 +82,7 @@ void loop() {
   }
 }
 ```
+
+
+# Serial over Wifi?
+Arduino Uno R4 Wifi: https://arduinogetstarted.com/tutorials/arduino-serial-to-wifi-converter 
