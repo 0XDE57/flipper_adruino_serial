@@ -21,7 +21,7 @@ Currently only working at **9600**. Unknown why 38400+ doesn't work... *todo*
 
 UNO
 -
-Arduino Uno only has one serial port, so we use SoftwareSerial instead:
+Arduino Uno only has one serial port, so we use SoftwareSerial instead: https://arduinogetstarted.com/tutorials/arduino-softwareserial
 
 Flipper: `TX = 13, RX = 14`
 
