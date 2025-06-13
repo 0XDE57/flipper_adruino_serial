@@ -19,6 +19,8 @@ Flipper Log Baud Rates: `9600, 38400, 57600, 115200, 230400, 460800, 9261600`
 
 Currently only working at **9600**. Unknown why 38400+ doesn't work... *todo*
 
+**NOTE:** Adruino IDE > Tools > Serial Monitor will see messages from flipper, but does not understand color tokens so the output will look funny. Recommend use putty instead.
+
 UNO
 -
 Arduino Uno only has one serial port, so we use SoftwareSerial instead: https://arduinogetstarted.com/tutorials/arduino-softwareserial
