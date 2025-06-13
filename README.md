@@ -59,7 +59,7 @@ Boards like the DUE have multiple serial ports:
 
 Flipper: `TX = 13, RX = 14`
 
-Auduino UNO: `TX1 = 19, RX1 = 18`
+Auduino DUE: `TX1 = 19, RX1 = 18`
 
 ```ino
 //9600 works. other rates no worky :(
