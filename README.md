@@ -13,7 +13,7 @@ See Arduino Boards for supported serial ports: https://docs.arduino.cc/language-
 
 ## Flipper -> Arduino -> PuTTY
 
-The arduino is simply forwarding UART messages from input RX and TX pins, and writing them to serial USB.
+The arduino is simply forwarding UART messages from input RX pin, and writing them to serial USB.
 
 Flipper Log Baud Rates: `9600, 38400, 57600, 115200, 230400, 460800, 9261600`
 
