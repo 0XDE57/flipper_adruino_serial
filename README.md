@@ -91,7 +91,7 @@ Arduino Uno R4 Wifi: https://arduinogetstarted.com/tutorials/arduino-serial-to-w
 
 
 # Prevent Log Reset when Flashing
-By default when the device is flashed, the LogLevel is reset to None, and Debug flag is reset ti off. This can be inconvenient when debugging and tracing.
+By default when the device is flashed, the Log Level is reset to None, and Debug flag is reset to off. This can be inconvenient when debugging and tracing.
 
 We can patch the firmware to not reset our log settings by commenting out or removing the lines:
 ```c
@@ -100,4 +100,6 @@ furi_hal_rtc_reset_flag(FuriHalRtcFlagDebug);
 ```
 
 in function `update_task_worker_flash_writer()` in class `applications/system/updater/util/update_task_worker_flasher.c` 
+
+This is so we can always trace through firmware updates and boots.
 
