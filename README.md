@@ -21,6 +21,7 @@ Currently only working at **9600**. Unknown why 38400+ doesn't work... *todo*
 
 **NOTE:** Adruino IDE > Tools > Serial Monitor will see messages from flipper, but does not understand color tokens so the output will look funny. Recommend use putty instead.
 
+
 UNO
 -
 Arduino Uno only has one serial port, so we use SoftwareSerial instead: https://arduinogetstarted.com/tutorials/arduino-softwareserial
@@ -86,3 +87,17 @@ void loop() {
 
 # Serial over Wifi?
 Arduino Uno R4 Wifi: https://arduinogetstarted.com/tutorials/arduino-serial-to-wifi-converter 
+
+
+
+# Prevent Log Reset when Flashing
+By default when the device is flashed, the LogLevel is reset to None, and Debug flag is reset ti off. This can be inconvenient when debugging and tracing.
+
+We can patch the firmware to not reset our log settings by commenting out or removing the lines:
+```c
+furi_hal_rtc_set_log_level(FuriLogLevelNone);
+furi_hal_rtc_reset_flag(FuriHalRtcFlagDebug);
+```
+
+in function `update_task_worker_flash_writer()` in class `applications/system/updater/util/update_task_worker_flasher.c` 
+
